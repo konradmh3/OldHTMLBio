@@ -8,6 +8,16 @@ a{
   color: white;
   position: absolute;
   top: 50%;
+  left: 90%;
+  transform: translate(-90%, -50%);
+}
+
+.mytext2 {
+  align-content: center;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
   left: 10%;
   transform: translate(-10%, -50%);
 }
