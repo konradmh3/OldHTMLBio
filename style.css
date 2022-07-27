@@ -1,3 +1,7 @@
+.circular-pic{
+  border-radius: 50%;
+}
+
 a{
   color: white;
 }
@@ -8,8 +12,8 @@ a{
   color: white;
   position: absolute;
   top: 50%;
-  left: 90%;
-  transform: translate(-90%, -50%);
+  left: 85%;
+  transform: translate(-85%, -50%);
 }
 
 .mytext2 {
@@ -18,8 +22,8 @@ a{
   color: white;
   position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translate(-10%, -50%);
+  left: 15%;
+  transform: translate(-15%, -50%);
 }
 h1{
   font-family: Arial, sans-serif;
