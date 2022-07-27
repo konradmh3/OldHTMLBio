@@ -6,15 +6,6 @@ a{
   color: white;
 }
 
-.mytext {
-  align-content: center;
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 85%;
-  transform: translate(-85%, -50%);
-}
 
 .mytext2 {
   align-content: center;
@@ -22,8 +13,18 @@ a{
   color: white;
   position: absolute;
   top: 50%;
-  left: 15%;
-  transform: translate(-15%, -50%);
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.mytext {
+  align-content: center;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
 }
 h1{
   font-family: Arial, sans-serif;
