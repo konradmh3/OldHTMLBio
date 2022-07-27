@@ -13,7 +13,7 @@ a{
   color: white;
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 25%;
   transform: translate(-50%, -50%);
 }
 
@@ -23,7 +23,7 @@ a{
   color: white;
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 75%;
   transform: translate(-50%, -50%);
 }
 h2{
