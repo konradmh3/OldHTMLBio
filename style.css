@@ -7,13 +7,23 @@
   border-radius: 50%;
 }
 
-
-.row {
+/* in order to modify an already existing class without modifying all instances of the class, use a new name for div such as topbanner*/
+topbanner.row{
   background: url(games1.jpg);
   background-repeat: repeat-x;
 }
-
-
+button_Primary.col-3{
+  background-color: #222222;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
 h2 {
   display: inline;
   font-family: Arial, sans-serif;
