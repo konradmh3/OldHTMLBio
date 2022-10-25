@@ -10,8 +10,8 @@
 
 .row {
   background: url(games1.jpg);
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background-repeat: repeat-x;
+  background-size: cover;
   background-position: center;
 }
 
