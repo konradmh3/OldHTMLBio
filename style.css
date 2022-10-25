@@ -8,10 +8,11 @@
 }
 
 
-#headPhoto1 {
+.row {
   background: url(games1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center;
 }
 
 
