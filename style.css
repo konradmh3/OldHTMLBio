@@ -1,13 +1,13 @@
 .circular-pic{
   border-radius: 50%;
 }
-
+/*
 a{
   color: white;
 }
 
 
-.mytext2 {
+ .mytext2 {
   align-content: center;
   text-align: center;
   color: white;
@@ -882,4 +882,4 @@ body {
     transform: translate3d(0, 0, -2000px);
     opacity: 0;
   }
-}
+} */
