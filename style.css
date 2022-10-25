@@ -12,8 +12,15 @@ topbanner.row{
   background: url(games1.jpg);
   background-repeat: repeat-x;
 }
+myContentHeader.row{
+  background-color: #222222;
+  text-align: center;
+  margin: 20px 0px;
+}
 myContent.row{
   background-color: #222222;
+  text-align: center;
+  margin: 0px 0px;
 }
 .button_Primary.col-3{
   background-color: #222222;
@@ -47,13 +54,27 @@ h2 {
   display: inline;
   font-family: Arial, sans-serif;
 }
+h1 {
+  display: inline;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.linkcolornounderline{
+  color: #f79f06;
+  text-decoration: none;
+}
 
 /* center allign text in p tags */
 p {
+  color: white;
  display: inline;
   font-family: Arial, sans-serif;
 }
-
+/* .pcenter {
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+} */
 /*
 * {
   margin: 0;
