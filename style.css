@@ -13,14 +13,21 @@ topbanner.row{
   background-repeat: repeat-x;
 }
 myContentHeader.row{
-  background-color: #222222;
+  /* background-color: #222222; */
   text-align: center;
   margin: 20px 0px;
 }
 myContent.row{
-  background-color: #222222;
+  /* background-color: #222222; */
   text-align: center;
+  margin: 0px 0px;  
+}
+/* below i want to make a div element that has rounded background color 222222 */
+#myContainer{
+  background-color: #222222;
+  border-radius: 10px;
   margin: 0px 0px;
+  padding: 0px 0px;
 }
 .button_Primary.col-3{
   background-color: #222222;
