@@ -6,7 +6,10 @@
   width: 180px;
   border-radius: 50%;
 }
-
+/* for the p tag with id="description, add padding to top and*/
+#description {
+  padding-top: 20px;
+}
 /* in order to modify an already existing class without modifying all instances of the class, use a new name for div such as topbanner*/
 topbanner.row{
   background: url(games1.jpg);
