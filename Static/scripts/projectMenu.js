@@ -4,11 +4,11 @@
 
 function changeContentSG() {
     document.getElementById("projTitle").innerHTML = "Stick Game<br>";
-    document.getElementById("videoContent").innerHTML = "<video width='100%' height='100%' controls><source src='clips/stickGameFinal.mp4' type='video/mp4'></video>";
+    document.getElementById("videoContent").innerHTML = "<video width='100%' height='100%' controls><source src='Static/clips/stickGameFinal.mp4' type='video/mp4'></video>";
     document.getElementById("descriptionProject").innerHTML = "Stick Game is a game I made in Unity. It is a 2D game where you play as a stick figure and you have to avoid the obstacles, collect the coins and get to the door. The game is made in C# and uses the Unity engine. The game is still in development and I plan to add more levels and features to it.";
     document.getElementById("descriptionTech").innerHTML = "Unity, C#, UI design";
     document.getElementById("descriptionCode").innerHTML = "The source code for this project is available on my GitHub, or Download the most recent build if you trust me ;)!";
-    document.getElementById("projectLinks").innerHTML = "<a href='https://github.com/konradmh3/Stick-Game-Unity' target='_blank' class='button_Primary col-3'> GitHub</a> <a href='BUILDS/Linux_Build_1.1.zip' target='_blank' class='button_Primary col-3'> Download</a>";
+    document.getElementById("projectLinks").innerHTML = "<a href='https://github.com/konradmh3/Stick-Game-Unity' target='_blank' class='button_Primary col-3'> GitHub</a> <a href='Static/BUILDS/Linux_Build_1.1.zip' target='_blank' class='button_Primary col-3'> Download</a>";
 
     // 
     //         <!-- insert autoplaying video-->
