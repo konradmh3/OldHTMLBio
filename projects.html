@@ -28,9 +28,20 @@
       <a href="index.html" class="button_Primary col-3">
         About Me
       </a>
-      <a href="projects.html" class="button_Primary_Selected col-3">
-        Projects
-      </a>
+      <!-- 
+        the below div is the new project menu
+        we still have to match the style of the other buttons
+        we can do this by adding the class "button_Primary" to the div
+       -->
+      <div class="dropdown col-3 button_Primary">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+          <a href="javascript:changeContentSG()">Stick Game</a>
+          <a href="javascript:changeContentFD()">FooDood</a>
+          <a href="javascript:changeContentKL()">Key Logger</a>
+          <a href="javascript:changeContentFB()">Other Front/Back End Projects</a>
+        </div>
+      </div>
       <a href="https://github.com/konradmh3" target="_blank" class="button_Primary col-3">
         GitHub
       </a>
@@ -57,21 +68,13 @@
         <myContentHeader class="row">
           <div class="col-12">
             <h1 id="projTitle">Stick Game<br></h1>
-            <div class="dropdown">
-              <button class="dropbtn">...</button>
-              <div class="dropdown-content">
-                <a href="javascript:changeContentSG()">Stick Game</a>
-                <a href="javascript:changeContentFD()">FooDood</a>
-                <a href="javascript:changeContentKL()">Key Logger</a>
-                <a href="javascript:changeContentFB()">Other Front/Back End Projects</a>
-              </div>
-            </div>
+
           </div>
         </myContentHeader>
         <myContent class="row">
           <div id="videoContent" class="col-12">
             <!-- insert autoplaying video-->
-            
+
             <video width="100%" height="100%" autoplay controls>
               <source src="Static/clips/stickGameFinal.mp4" type="video/mp4">
           </div>
@@ -81,7 +84,8 @@
             <h1>Description</h1>
           </div>
           <div class="col-12">
-            <p id="descriptionProject">Stick Game is a game I made in Unity. It is a 2D game where you play as a stick figure
+            <p id="descriptionProject">Stick Game is a game I made in Unity. It is a 2D game where you play as a stick
+              figure
               and
               you have to avoid
               the obstacles, collect the coins and get to the door. The game is made in C# and uses the Unity engine.
@@ -103,7 +107,8 @@
             <h1>Source Code</h1>
           </div>
           <div class="col-12">
-            <p id="descriptionCode">The source code for this project is available on my GitHub, or Download the most recent
+            <p id="descriptionCode">The source code for this project is available on my GitHub, or Download the most
+              recent
               build!</p>
           </div>
         </myContent>
