@@ -1,3 +1,50 @@
+/* drop down styling */
+.dropbtn {
+  /* lets verticaly center this in the div */
+  color: white;
+  /* add padding to top of button */
+  font-size: 15px;
+  background-color: #303030;
+  border: none;
+  padding-bottom: 6px;
+  padding-top: 0px;
+  padding-left: 75px;
+  padding-right: 75px;
+  border-radius: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+  border-radius: 10px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #000000;}
+
+
+
+
 /* allign pic center div */
 .circular-pic {
   display: inline;
@@ -7,17 +54,26 @@
   border-radius: 50%;
 }
 /* for the p tag with id="description, add padding to top and*/
-#description {
+#descriptionProject {
+  padding-top: 20px;
+}
+#descriptionTech {
+  padding-top: 20px;
+}
+#descriptionCode {
   padding-top: 20px;
 }
 /* in order to modify an already existing class without modifying all instances of the class, use a new name for div such as topbanner*/
 topbanner.row{
-  background: url(games1.jpg);
   background-repeat: repeat-x;
 }
 myContentHeader.row{
   /* background-color: #222222; */
   text-align: center;
+  margin: 20px 0px;
+}
+myContentHeaderNC.row{
+  /* background-color: #222222; */
   margin: 20px 0px;
 }
 myContent.row{
