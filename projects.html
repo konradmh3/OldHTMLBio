@@ -8,7 +8,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="Static/style/style.css">
   <!-- add projectMenu.js script -->
-  <script src="Static/scripts/projectMenu.js"></script>
+  <!-- <script src="Static/scripts/projectMenu.js"></script> -->
 </head>
 
 <body style="background-color: rgb(62, 62, 62);">
@@ -36,10 +36,21 @@
       <div class="dropdown col-3 button_Primary">
         <button class="dropbtn">Projects</button>
         <div class="dropdown-content">
-          <a href="javascript:changeContentSG()">Stick Game</a>
+          <!-- lets now change the href to point to each mycontainer div -->
+          <!-- <a href="javascript:changeContentSG()">Stick Game</a>
           <a href="javascript:changeContentFD()">FooDood</a>
           <a href="javascript:changeContentKL()">Key Logger</a>
-          <a href="javascript:changeContentFB()">Other Front/Back End Projects</a>
+          <a href="javascript:changeContentFB()">Other Front/Back End Projects</a> -->
+          <a href="#stickgame">Stick Game</a>
+          <a href="#foodood">FooDood</a>
+          <a href="#keylogger">Key Logger</a>
+          <a href="#otherfrontbackendprojects">Other Front/Back End Projects</a>
+          <!-- 
+            to insure this works we need to add an id to each mycontainer div equal to the name of the project
+           -->
+          <!-- am going to change this menu so all projects appear on one page, then these functions will go to bookmark
+          via using # to go to the specific section of the page -->
+         <!-- First Add more preject sections -->
         </div>
       </div>
       <a href="https://github.com/konradmh3" target="_blank" class="button_Primary col-3">
@@ -51,7 +62,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="projects">
     <div id="myContainer">
       <myContentHeader class="row">
         <div class="col-12">
@@ -61,7 +72,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" id="stickgame">
     <div id="myContainer">
       <div id="changingContent">
 
@@ -118,6 +129,162 @@
               GitHub</a>
             <a href='Static/BUILDS/Linux_Build_1.1.zip' target='_blank' class='button_Primary col-3'>
               Download</a>
+          </div>
+        </myContent>
+        <!-- we are going to add a drop down menu at the top to switch between different projects 
+          we are going to switch the content within the changingContent div
+      -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="foodood">
+    <div id="myContainer" style="margin-top: 60px;">
+      <div id="changingContent">
+
+        <myContentHeader class="row">
+          <div class="col-12">
+            <h1 id="projTitle">FooDood<br></h1>
+
+          </div>
+        </myContentHeader>
+        <myContent class="row">
+          <div id="videoContent" class="col-12">
+            <!-- insert autoplaying video or image content here-->
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Description</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionProject">FooDood is a mobile application that combines the concept of Tinder-swiping with selecting something to eat. Science says that it is easier to make a decision when presented with simple options such as 'yes' or 'no' rather than a large list of options. FooDood will present users with a list of food options in their area and they will be able to swipe left or right on the options to decide what to eat. With this product, we will be able to help people make decisions on what to eat more easily and efficiently.</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Technologies Used</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionTech">Front End Stack: React Native, Expo, TailwindCSS<br>Back End Stack: Java, Spring, NoSQL, Google Cloud</p>
+          </div>
+        </myContent>
+        <!-- lets add a section to either go to github source code or download the zip with the build -->
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Source Code</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionCode">The source code and other documents for this project are available on GitHub!</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div id="projectLinks" class="col-12">
+            <a href='https://github.com/Brenden-Smith/FooDood' target='_blank' class='button_Primary col-3'> GitHub</a>
+          </div>
+        </myContent>
+        <!-- we are going to add a drop down menu at the top to switch between different projects 
+          we are going to switch the content within the changingContent div
+      -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="keylogger">
+    <div id="myContainer" style="margin-top: 60px;">
+      <div id="changingContent">
+
+        <myContentHeader class="row">
+          <div class="col-12">
+            <h1 id="projTitle">Key Logger<br></h1>
+
+          </div>
+        </myContentHeader>
+        <myContent class="row">
+          <div id="videoContent" class="col-12">
+            <!-- insert autoplaying video or image content here-->
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Description</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionProject">Created a python executable that uses HTTP POST requests to send the keypresses of a user to a Python server hosted on a Raspberry Pi. Then created a frontend html/js page served by the same python server to view the key logs in a user friendly way.</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Technologies Used</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionTech">malware, python executables, python server, javascript, html, css</p>
+          </div>
+        </myContent>
+        <!-- lets add a section to either go to github source code or download the zip with the build -->
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Source Code</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionCode">The source code for this project is available on my GitHub!</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div id="projectLinks" class="col-12">
+            <a href='https://github.com/konradmh3/378-KEY-LOGGER#readme' target='_blank' class='button_Primary col-3'> GitHub</a>
+          </div>
+        </myContent>
+        <!-- we are going to add a drop down menu at the top to switch between different projects 
+          we are going to switch the content within the changingContent div
+      -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="otherfrontendbackendprojects">
+    <div id="myContainer" style="margin-top: 60px;">
+      <div id="changingContent">
+
+        <myContentHeader class="row">
+          <div class="col-12">
+            <h1 id="projTitle">Front/Back End Projects<br></h1>
+
+          </div>
+        </myContentHeader>
+        <myContent class="row">
+          <div id="videoContent" class="col-12">
+            <!-- insert autoplaying video or image content here-->
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Description</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionProject">Full stack program, with javascript/html on the front end sending HTTP requests to a server hosted on a raspberry pi in order to remote control a car. That same Pi also being the microprocessor for a small motor that was used to move and steer the car. We also modeled and designed the car from scratch and 3d printed it in order to house the electronics for the car. There is also a similar project in the Github repo to control a light from a webserver that is connected to the gpio pins on the Pi.</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Technologies Used</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionTech">javascript, html, css, python, flask, raspberry pi, gpio pins, 3d printing</p>
+          </div>
+        </myContent>
+        <!-- lets add a section to either go to github source code or download the zip with the build -->
+        <myContent class="row">
+          <div class="col-12">
+            <h1>Source Code</h1>
+          </div>
+          <div class="col-12">
+            <p id="descriptionCode">The source code for this project is available on my GitHub!</p>
+          </div>
+        </myContent>
+        <myContent class="row">
+          <div id="projectLinks" class="col-12">
+            <a href='https://github.com/konradmh3/mechprojects' target='_blank' class='button_Primary col-3'> GitHub</a>
           </div>
         </myContent>
         <!-- we are going to add a drop down menu at the top to switch between different projects 
